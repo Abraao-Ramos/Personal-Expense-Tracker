@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Personal Expense Tracker</h1>
+      <div class="form-group">
+        <label for="expenseName">Expense Name:</label>
+        <input type="text" id="expenseName" />
+      </div>
+      <div class="form-group">
+        <label for="expenseAmount">Expense Amount ($):</label>
+        <input type="number" id="expenseAmount" />
+      </div>
+      <button id="addExpense">Add Expense</button>
+      <button id="clearLastExpense">Clear Last</button>
+      <button id="resetExpenses">Reset</button>
+      <button id="showGraph">Show Graph</button>
+      <h3>Total: $<span id="totalAmount">0.00</span></h3>
+      <ul id="expenseList"></ul>
+      <canvas id="expenseChart" style="display: none"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
